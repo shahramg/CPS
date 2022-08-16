@@ -1,4 +1,4 @@
-function [cpa, TravelPaths, ptChgs, totalIntraTravelDistance, totalInterTravelDistance, totalIntraFlights, totalInterFlights, colorChgs] = workflowLossless(numFiles, cubeCapacity, doReset)
+function [cpa, TravelPaths, ptChgs, colorChgs] = workflowLossless(numFiles, doReset)
 silent = false;
 
 TravelPaths={};
@@ -17,7 +17,7 @@ cpa=inMemoryCP(pathToCloudPointFiles,numFiles);
 % and compute travel paths
 if numFiles > 1
     for i=2:numFiles
-        [ TravelPaths{i-1}, colorChgs{i-1} ] = algPointChanges(cpa{i-1}, cpa{i}, false, false)
+        [ TravelPaths{i-1}, colorChgs{i-1} ] = algPointChanges(cpa{i-1}, cpa{i}, false, false);
     end
 end
 

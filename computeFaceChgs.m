@@ -13,7 +13,8 @@ faceChgs = {};
 hashMapOnFirstCldPt = containers.Map('KeyType','char', 'ValueType','any');
 srcCloudPoint = PtCldArray{1};
 startTS = 0;
-endTS = 1 * 1000/24;
+%endTS = 1 * 1000/24;  %Time
+endTS=1;
 
 % We use the backupVertexList because it is the original AND this code
 % only reads coordinates of points without changing them.
@@ -47,8 +48,10 @@ for ptcldidx=2:numPtClds
     tgtVertexList = PtCldArray{ptcldidx}.backupVertexList;
 
     % start time stamp for duration interval in milliseconds
-    startTS = (ptcldidx-1) * 1000/24;
-    endTS = (ptcldidx) * 1000/24;
+    %startTS = (ptcldidx-1) * 1000/24; % Time
+    startTS = (ptcldidx-1);
+    %endTS = (ptcldidx) * 1000/24; %Time
+    endTS = ptcldidx;
 
     % Enumerate the flight paths for change of position
     for f=1:size(tgtFaceList,2)

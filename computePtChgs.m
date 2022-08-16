@@ -44,7 +44,8 @@ for ptcldidx=2:numPtClds
     tgtTrvlPath = TravelPathArray(ptcldidx-1);
 
     % start time stamp for duration interval in milliseconds
-    startTS = (ptcldidx-1) * 1000/24;
+    %startTS = (ptcldidx-1) * 1000/24;
+    startTS = ptcldidx-1;
 
     % Enumerate the flight paths for change of position
     for k=1:size(tgtTrvlPath{1},2)
@@ -132,7 +133,8 @@ for ptcldidx=2:numPtClds
     end
 end
 
-endTS = numPtClds * 1000/24;
+%endTS = numPtClds * 1000/24;  %For Time
+endTS=numPtClds;
 % Enumerate entries and close their end intervals
 for i=1:size(hashMapArrays, 2)
     tgtHash = hashMapArrays{i};

@@ -24,8 +24,8 @@ for hidx=1:size(arrayHashTbls,2)
         numv=size(face1{1}.vertices, 2);
         fprintf(fileID,'%d ',numv);
         fprintf(fileID,'%d ',face1{1}.vertices);
-        fprintf(fileID,'%3.4f ',face1{1}.dursElt.startTS);
-        fprintf(fileID,'%3.4f\n',face1{1}.dursElt.endTS);
+        fprintf(fileID,'%d ',face1{1}.dursElt.startTS);
+        fprintf(fileID,'%d\n',face1{1}.dursElt.endTS);
         cntr=cntr+1;
     end
 end

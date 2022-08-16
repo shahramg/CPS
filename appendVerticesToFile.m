@@ -35,8 +35,8 @@ for v=1:numVs
         fprintf(fileID,'%d ', point1{1}.colorsElt.green);
         fprintf(fileID,'%d ', point1{1}.colorsElt.blue);
         fprintf(fileID,'%d ', point1{1}.colorsElt.transparency);
-        fprintf(fileID,'%3.4f ',point1{1}.dursElt.startTS);
-        fprintf(fileID,'%3.4f\n',point1{1}.dursElt.endTS);
+        fprintf(fileID,'%d ',point1{1}.dursElt.startTS);
+        fprintf(fileID,'%d\n',point1{1}.dursElt.endTS);
     else
         %numelts = size(szwip,2);
         idxarr=[point1{1}.idx];
