@@ -37,8 +37,12 @@ The submitted paper describes the size of CPS compressed file with 3, 5, 10, 20,
 2. We plan to provide a C (C++) implementation to improve the speed of this implementation.
 
 # Getting the Source
-
+Clone the repository using:
+```
+git clone git@github.com:shahramg/CPS.git
+```
 
 # Citations
+TBA
 
 ```
