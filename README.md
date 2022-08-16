@@ -11,7 +11,7 @@ Author:  Shahram Ghandeharizadeh (shahram@usc.edu)
 
 # Documentation
 
-This section describes how to run CPS to generate the results presented in the submitted paper.
+This section provides an overview of CPS and describes how to run CPS to generate the results presented in the submitted paper.
 
 ## CPS
 CPS is a lossless Compression technique for Point cloud Sequences.  . Its main contribution is the concept of a
