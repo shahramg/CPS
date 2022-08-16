@@ -67,7 +67,7 @@ classdef CloudPoint < handle
                     obj.vertexList{obj.numVertices}=vtList{i};
                 end
             end
-            outputT= sprintf('Replaced %d duplicates with a negative coordinate.',numDups);
+            outputT= sprintf('Replaced %d duplicates with a max coordinate value.',numDups);
             disp(outputT);
         end
         function obj = resetCloudPoint(obj,doReset,silent,cubeCapacity,llArray,hlArray,dlArray,inputCubes)
