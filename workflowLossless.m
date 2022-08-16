@@ -1,4 +1,4 @@
-function [cpa, TravelPaths, ptChgs, colorChgs] = workflowLossless(numFiles)
+function [cpa, ptChgs, colorChgs] = workflowLossless(numFiles)
 silent = false;
 doReset = false;
 
