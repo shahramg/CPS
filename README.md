@@ -23,7 +23,7 @@ The best way to run CPS is to download this repository into a directoy, launch m
 ```
 The value 3 is the number of PLY files in the RoseClip directory to compress using CPS.  The RoseClip directory has 115 PLY files.  Hence, the maximum value that can be used as the input argument to workflowLossless is 115.
 
-The output of the above command are the cloud points (cpa), the changed points, and changed colors.  In addition, workflowLossless creates a csp file, losslessPLY_3.cps, that contains the compressed version of the first 3 PLY files of the RoseClip point cloud sequence.
+The output of the above command is a csp file, losslessPLY_3.cps, that contains the compressed version of the first 3 PLY files of the RoseClip point cloud sequence.
 
 The submitted paper describes the size of CPS compressed file with 3, 5, 10, 20, and 100 PLY files.  It is trivial to run these experiments by changing the argument of workflowLossless to be the appropriate value.
 
