@@ -14,12 +14,7 @@ Author:  Shahram Ghandeharizadeh (shahram@usc.edu)
 This section provides an overview of CPS and describes how to run CPS to generate the results presented in the submitted paper.
 
 ## CPS
-CPS is a lossless Compression technique for Point cloud Sequences.  
-Its main contribution is the concept of a
-lossless point which wraps the traditional definition of a point
-with an interval attribute, e.g., start and end times that describe
-when and for how long a point is displayed. CPS consumes n point
-clouds in a sequence to produce one compressed file.
+CPS is a lossless Compression technique for Point cloud Sequences.  Its main contribution is the concept of a lossless point which wraps the traditional definition of a point with an interval attribute, e.g., start and end times that describe when and for how long a point is displayed. CPS consumes n point clouds in a sequence to produce one compressed file.
 
 # Executing this Software
 The best way to run CPS is to download this repository into a directoy, launch matlab from the directory and execute the following command:
