@@ -1,11 +1,11 @@
 # CPS, Interval-based compression
-This repository contains MATLAB R2022a (9.12.0.1884302, maci64 bit, February 16 2022) implementation of CPS, a lossless compression technique for point cloud sequences.  In addition, it includes the rose point cloud sequence consisting of 115 point clouds with each point cloud requiring 65K FLSs to illuminate.  
+This repository contains MATLAB R2022a (9.12.0.1884302, maci64 bit, February 16 2022) implementation of CPS, a lossless compression technique for point cloud sequences.  In addition, it includes the rose point cloud sequence consisting of 115 point clouds with each cloud consisting of 65K points.  
 
 Author:  Shahram Ghandeharizadeh (shahram@usc.edu)
 
 # Features
 
-  * CPS algorithm
+  * CPS algorithm.
   * Rose point cloud sequence data set consisting of 115 point clouds.
   * The algorithms are detailed in a technical manuscript submitted for publication.
 
@@ -14,7 +14,8 @@ Author:  Shahram Ghandeharizadeh (shahram@usc.edu)
 This section provides an overview of CPS and describes how to run CPS to generate the results presented in the submitted paper.
 
 ## CPS
-CPS is a lossless Compression technique for Point cloud Sequences.  . Its main contribution is the concept of a
+CPS is a lossless Compression technique for Point cloud Sequences.  
+Its main contribution is the concept of a
 lossless point which wraps the traditional definition of a point
 with an interval attribute, e.g., start and end times that describe
 when and for how long a point is displayed. CPS consumes n point
