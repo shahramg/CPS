@@ -29,7 +29,7 @@ The submitted paper describes the size of CPS compressed file with 3, 5, 10, 20,
 
 
 # Limitations
-1. With a compressed file, say losslessPLY_3.cps, once it is compressed, it produces 3 PLY files.  These files are logically equivalent to the original because they are duplicate free.  A short term research direction is to maintain sufficient metadata in the compressed file to produce the original files.
+1. With a compressed file, say losslessPLY_3.cps, once it is uncompressed, it produces 3 PLY files.  These files are logically equivalent to the original because they are duplicate free.  A short term research direction is to maintain sufficient metadata in the compressed file to produce the original files.
 2. We plan to provide a C (C++) implementation to improve the speed of this implementation.
 
 # Getting the Source
